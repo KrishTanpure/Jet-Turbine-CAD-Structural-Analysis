@@ -1,4 +1,4 @@
-# Jet Turbine Engine CAD \& Structural Analysis
+# **Jet Turbine Engine CAD \& Structural Analysis**
 
 
 
@@ -6,15 +6,15 @@ This is a personal project in which I designed a multi-stage axial turbofan engi
 
 
 
-#### What This Is
+#### ***What This Is***
 
 
 
-I modeled a single-spool turbofan motor, fan, four-row compressor, four-row turbine, all on one shaft, then ran a static structural FEA to see how it holds up under the loads it'd actually see while running: spinning at 12000 RPM, aerodynamic pressure on the blades, torque through the shaft, thrust, and gravity. The goal was to check the stress, deformation, and safety factor against Inconel 718, the material real turbine rotors are made from.   
+I modeled a single-spool turbofan motor, fan, four-row compressor, four-row turbine, all on one shaft, then ran a static structural FEA to see how it holds up under the loads it'd actually see while running: spinning at 12000 RPM, aerodynamic pressure on the blades, torque through the shaft, thrust, and gravity. The goal was to check the stress, deformation, and safety factor against Inconel 718, the material real turbine rotors are made from.
 
 
 
-#### How the FEA was set up
+#### ***How the FEA was set up***
 
 
 
@@ -39,6 +39,41 @@ I modeled a single-spool turbofan motor, fan, four-row compressor, four-row turb
 * 600 Nm of torque on the shaft
 * 5000 N of axial thrust on the rear bearing ends
 * Standard Earth Gravity
+
+
+
+###### How it's held in place: 
+
+
+
+The rotor is constrained at the shaft's bearing location   
+
+
+
+
+
+
+
+
+
+
+
+#### ***Results***
+
+
+
+|*Result*|*Value* |*Location*|
+|-|-|-|
+|Max Deformation|1.11 mm|Fan blade tips|
+|Max stress (von-Mises)|368.3 MPa|Casing ring (rear, near turbine)|
+|Max elastic strain|0.00188 m/m|Casing ring (rear, near turbine)|
+|Min safety factor|2.99|Casing ring (rear, near turbine)|
+
+
+
+
+
+A safety factor of around 3.0 against Inconel 718's yield strength, which is well past the 1.5 that's usually treated as the floor in aerospace design.    
 
 
 
