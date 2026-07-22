@@ -30,6 +30,8 @@ I modeled a single-spool turbofan motor, fan, four-row compressor, four-row turb
 
 
 
+
+
 ###### Loads Applied:
 
 
@@ -39,20 +41,6 @@ I modeled a single-spool turbofan motor, fan, four-row compressor, four-row turb
 * 600 Nm of torque on the shaft
 * 5000 N of axial thrust on the rear bearing ends
 * Standard Earth Gravity
-
-
-
-###### How it's held in place: 
-
-
-
-The rotor is constrained at the shaft's bearing location   
-
-
-
-
-
-
 
 
 
@@ -74,10 +62,6 @@ The rotor is constrained at the shaft's bearing location
 
 
 A safety factor of around 3.0 against Inconel 718's yield strength, which is well past the 1.5 that's usually treated as the floor in aerospace design.    
-
-
-
-
 
 
 
